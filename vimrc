@@ -27,6 +27,7 @@ set guifont=Monospace\ 12
 set guioptions-=T
 set guiheadroom=-1
 set nohidden
+set encoding=utf8
 "set ruler
 "set rulerformat=%15(%c%V\ %p%%%)
 filetype plugin on
@@ -45,6 +46,7 @@ set path=.,/usr/include
 
 "make program
 set makeprg=gmake
+au BufNewFile,BufRead Makefile set noexpandtab
 
 "keyboard mappings
 map <C-\> :grep -r <cword> .<cr>:copen<cr>

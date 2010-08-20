@@ -4,6 +4,3 @@
 [submodule "vim/bundle/vim-taglist"]
 	path = vim/bundle/vim-taglist
 	url = http://github.com/bronson/vim-taglist.git
-[submodule "vim/bundle/vcscommand"]
-	path = vim/bundle/vcscommand
-	url = git://repo.or.cz/vcscommand.git
