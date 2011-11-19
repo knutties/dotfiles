@@ -28,6 +28,7 @@ set guioptions-=T
 set guiheadroom=-1
 set nohidden
 set encoding=utf8
+set showmatch
 "set ruler
 "set rulerformat=%15(%c%V\ %p%%%)
 filetype plugin on
