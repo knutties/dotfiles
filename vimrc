@@ -30,7 +30,6 @@ set nohidden
 set encoding=utf8
 set showmatch
 set modeline
-set modelines=10
 "set ruler
 "set rulerformat=%15(%c%V\ %p%%%)
 filetype plugin on
