@@ -35,10 +35,13 @@ set modeline
 filetype plugin on
 
 "last-position-jump
-au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
 "twiki syntax highlighting
-au BufNewFile,BufRead *.twiki     setf twiki
+autocmd BufNewFile,BufRead *.twiki     setf twiki
+
+"markdown syntax highlighting
+autocmd BufNewFile,BufReadPost *.mkd,*.markdown,*.mdown,*.md set filetype=markdown
 
 "open all buffers in new tabs
 "au BufAdd,BufNewFile * nested tab sball
