@@ -53,3 +53,7 @@ au BufNewFile,BufRead Makefile set noexpandtab
 "keyboard mappings
 map <C-\> :grep -r <cword> .<cr>:copen<cr>
 nmap <Space> <PageDown>
+
+"solarized settings
+set background=dark
+colorscheme solarized
