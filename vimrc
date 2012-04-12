@@ -43,8 +43,14 @@ autocmd BufNewFile,BufRead *.twiki     setf twiki
 "markdown syntax highlighting
 autocmd BufNewFile,BufReadPost *.mkd,*.markdown,*.mdown,*.md set filetype=markdown
 
+"html/xml closetag completion
+au BufNewFile,BufReadPost *.html,*.xml,*.xsl,*.php source ~/.vim/bundle/closetag/plugin/closetag.vim
+
 "open all buffers in new tabs
-"au BufAdd,BufNewFile * nested tab sball
+au BufAdd,BufNewFile * nested tab sball
+
+"disable Syntastic for html files
+au BufNewFile,BufReadPost *.html SyntasticToggleMode
 
 "augment path
 set path=.,/usr/include
