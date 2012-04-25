@@ -1,5 +1,9 @@
 export WORKON_HOME=$HOME/.pyenvs
+export PYBOOTENV=$WORKON_HOME/bootenv
+export VIRTUALENVWRAPPER_VIRTUALENV=$PYBOOTENV/bin/virtualenv
+export VIRTUALENVWRAPPER_PYTHON=$PYBOOTENV/bin/python
 source $WORKON_HOME/bootenv/bin/virtualenvwrapper.sh
+export PATH=$PATH:$PYBOOTENV/bin
 
 # Customize to your needs...
 # [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
