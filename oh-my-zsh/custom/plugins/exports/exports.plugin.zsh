@@ -1,5 +1,5 @@
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=$HOME/.pyenvs
+source $WORKON_HOME/bootenv/bin/virtualenvwrapper.sh
 
 # Customize to your needs...
 # [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
