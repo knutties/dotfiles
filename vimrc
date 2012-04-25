@@ -47,7 +47,7 @@ autocmd BufNewFile,BufReadPost *.mkd,*.markdown,*.mdown,*.md set filetype=markdo
 au BufNewFile,BufReadPost *.html,*.xml,*.xsl,*.php source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 "open all buffers in new tabs
-au BufAdd,BufNewFile * nested tab sball
+"au BufAdd,BufNewFile * nested tab sball
 
 "disable Syntastic for html files
 au BufNewFile,BufReadPost *.html SyntasticToggleMode
