@@ -46,6 +46,9 @@ autocmd BufNewFile,BufReadPost *.mkd,*.markdown,*.mdown,*.md set filetype=markdo
 "html/xml closetag completion
 au BufNewFile,BufReadPost *.html,*.xml,*.xsl,*.php source ~/.vim/bundle/closetag/plugin/closetag.vim
 
+"css file spacing
+"autocmd BufNewFile,BufReadPost *.css,*.less set softtabstop=2 shiftwidth=2 tabstop=2
+
 "open all buffers in new tabs
 "au BufAdd,BufNewFile * nested tab sball
 
